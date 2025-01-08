@@ -1,9 +1,9 @@
 def solution(arr1, arr2):
-    answer = []
-    arr2_t = list(zip(*arr2))
-    for a1 in arr1:
-        row = []
-        for a2t in arr2_t:
-            row.append(sum([x * y for x, y in zip(a1, a2t)]))
-        answer.append(row)
+    # print(list(zip(*arr2)))
+    # print(list(zip(arr1, zip(*arr2))))
+    answer = [[0] * len(arr2) for _ in range(len(arr1))]
+    print(answer)
+    arr2_t = zip(*arr2)
+    for a1, a2t in zip(arr1, arr2_t):
+        print(a1, a2t)
     return answer
