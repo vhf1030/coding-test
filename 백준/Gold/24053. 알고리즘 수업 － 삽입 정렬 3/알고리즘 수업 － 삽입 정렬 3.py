@@ -20,9 +20,6 @@ def solution(N, arrA, arrB):
         if loc + 1 != i:
             arrA[loc + 1] = tmp
             
-    if arrA == arrB:
-        return 1
-            
     return 0
 
 print(solution(N, arrA, arrB))
