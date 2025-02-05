@@ -1,15 +1,15 @@
-def get_words_all(word_list: list) -> list:
-    word_list_new = [word + next_word for word in word_list for next_word in 'AEIOU_']
-    if len(word_list_new[0]) == 5:
-        return word_list_new
-    else:
-        return get_words_all(word_list_new)
+# def get_words_all(word_list: list) -> list:
+#     word_list_new = [word + next_word for word in word_list for next_word in 'AEIOU_']
+#     if len(word_list_new[0]) == 5:
+#         return word_list_new
+#     else:
+#         return get_words_all(word_list_new)
 
-def solution(word):
-    words_all = get_words_all([''])
-    words_set = set([words.replace('_', '') for words in words_all])
-    answer = sorted(list(words_set)).index(word)
-    return answer
+# def solution(word):
+#     words_all = get_words_all([''])
+#     words_set = set([words.replace('_', '') for words in words_all])
+#     answer = sorted(list(words_set)).index(word)
+#     return answer
 
 
 # A____  1
