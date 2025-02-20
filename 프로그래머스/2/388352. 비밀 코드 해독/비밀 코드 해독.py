@@ -9,4 +9,5 @@ def solution(n, q, ans):
             if len(a_set & set(q_tmp)) != a_tmp:
                 answer -= 1
                 break
+
     return answer
